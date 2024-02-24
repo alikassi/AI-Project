@@ -2,6 +2,7 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
+    font-family: Arial, sans-serif;
 }
 
 .video-wrapper {
@@ -23,29 +24,28 @@ body, html {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    color: white; /* Ensure text is readable on top of video */
+    background: rgba(0, 0, 0, 0.5); /* Add a dark semi-transparent overlay for better readability */
+    padding: 20px;
+    border-radius: 10px; /* Optional: Rounded corners for the content box */
+}
+
+h1 {
+    font-size: 2em; /* Adjust title size */
+    margin-bottom: 0.5em;
+}
+
+p {
+    font-size: 1em; /* Adjust text size for description */
+    margin-bottom: 1.5em;
 }
 
 button {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
-}
-
-.collage {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    padding: 20px;
-}
-
-.collage img {
-    width: calc(33.333% - 10px);
-    height: auto;
-}
-
-@media (max-width: 600px) {
-    .collage img {
-        width: calc(50% - 10px);
-    }
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
 }
